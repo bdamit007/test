@@ -82,7 +82,7 @@ public class CinemaTicektBookingApplication {
             if(selection == i+1)
             {
                 film.setTitle(films[i]);
-                if(Ratings[i] == "P")
+                if(Ratings[i].equals("P"))
                 {
                     film.setRating(Rating.PARENTALGUIDANCE);
                 }
@@ -96,6 +96,27 @@ public class CinemaTicektBookingApplication {
                 }
             }
         }
+        
+        for(int i=0; i<films.length; i++)
+        {
+            if(selection == i+1)
+            {
+                film.setTitle(films[i]);
+                if(Ratings[i].equals("P"))
+                {
+                    film.setRating(Rating.PARENTALGUIDANCE);
+                }
+                else if(Ratings[i] == "G")
+                {
+                    film.setRating(Rating.GENERAL);
+                }
+                else
+                {
+                    film.setRating(Rating.MATURE);
+                }
+            }
+        }
+        
         return film;
     }
     /**
@@ -144,6 +165,7 @@ public class CinemaTicektBookingApplication {
             return ticket;
         }
     }
+    System.out.println(this is an issue)
     /**
      * Represents the main method
      */
