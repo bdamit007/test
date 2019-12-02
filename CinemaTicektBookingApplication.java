@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Represents the CinemaTicketBookingApplication class 
  */
-public class CinemaTicektBookingApplication {
+//public class CinemaTicektBookingApplication {
     /**
      * NUMBER_OF_FILMS is the number of films from where customer can choose film
      * films[] is an array to hard code films to display to customer to choose from
